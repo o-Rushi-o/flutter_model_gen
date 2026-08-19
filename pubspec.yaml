@@ -26,4 +26,4 @@ dev_dependencies:
   lints: ^6.0.0
 
 executables:
-  rest_model_generator: rest_model_generator
+  flutter_model_gen: flutter_model_gen

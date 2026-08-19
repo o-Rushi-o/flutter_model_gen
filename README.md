@@ -2,7 +2,7 @@
 
 A Dart CLI tool that automatically generates **Flutter/Dart models from API responses**.
 
-Simply provide an API URL and `rest_model_generator` fetches the response, analyzes the JSON structure, detects data types and nested objects, and generates clean Dart model classes with null safety, `fromJson()` and `toJson()` support.
+Simply provide an API URL and `flutter_model_gen` fetches the response, analyzes the JSON structure, detects data types and nested objects, and generates clean Dart model classes with null safety, `fromJson()` and `toJson()` support.
 
 ## ✨ Features
 
@@ -24,13 +24,13 @@ Simply provide an API URL and `rest_model_generator` fetches the response, analy
 Activate the package globally:
 
 ```bash
-dart pub global activate rest_model_generator
+dart pub global activate flutter_model_gen
 ```
 
 Or add it as a development dependency:
 
 ```bash
-dart pub add --dev rest_model_generator
+dart pub add --dev flutter_model_gen
 ```
 
 ## 🚀 Usage
@@ -38,7 +38,7 @@ dart pub add --dev rest_model_generator
 Provide an API endpoint using the `--url` option:
 
 ```bash
-dart run rest_model_generator --url https://api.restful-api.dev/objects
+dart run flutter_model_gen --url https://api.restful-api.dev/objects
 ```
 
 The generator will:
@@ -414,14 +414,14 @@ This makes the generator useful for APIs where different objects contain differe
 Example:
 
 ```bash
-dart run rest_model_generator \
+dart run flutter_model_gen \
   --url https://api.example.com/users
 ```
 
 ### Current command format
 
 ```bash
-dart run rest_model_generator --url <API_URL>
+dart run flutter_model_gen --url <API_URL>
 ```
 
 ## 🚧 Roadmap
@@ -470,7 +470,7 @@ See the `LICENSE` file for details.
 
 ## ⭐ Support
 
-If you find `rest_model_generator` useful, consider giving the project a ⭐ and sharing it with other Flutter developers.
+If you find `flutter_model_gen` useful, consider giving the project a ⭐ and sharing it with other Flutter developers.
 
 ---
 
