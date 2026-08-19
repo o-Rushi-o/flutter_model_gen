@@ -1,8 +1,8 @@
-import 'package:flutter_model_gen/generator/class_builder.dart';
-import 'package:flutter_model_gen/generator/file_writer.dart';
-import 'package:flutter_model_gen/generator/schema_builder.dart';
-import 'package:flutter_model_gen/models/dart_class.dart';
-import 'package:flutter_model_gen/utils/name_utils.dart';
+import 'package:rest_model_generator/generator/class_builder.dart';
+import 'package:rest_model_generator/generator/file_writer.dart';
+import 'package:rest_model_generator/generator/schema_builder.dart';
+import 'package:rest_model_generator/models/dart_class.dart';
+import 'package:rest_model_generator/utils/name_utils.dart';
 
 import '../network/api_client.dart';
 

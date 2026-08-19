@@ -1,4 +1,4 @@
-import 'package:flutter_model_gen/models/dart_field.dart';
+import 'package:rest_model_generator/models/dart_field.dart';
 
 import '../models/dart_class.dart';
 
