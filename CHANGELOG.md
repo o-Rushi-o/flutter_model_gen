@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.2
+## 1.1.3
 
 - Initial release.
 - Generate Dart models from REST API JSON.
