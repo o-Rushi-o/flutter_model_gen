@@ -1,0 +1,23 @@
+name: flutter_model_gen
+description: "A CLI tool that generates null-safe Dart models from REST API JSON responses."
+version: 1.0.0
+homepage:
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  http: 1.6.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+
+flutter:
+
