@@ -1,3 +1,14 @@
-## 0.0.1
+# Changelog
 
-* TODO: Describe initial release.
+## 1.1.2
+
+- Initial release.
+- Generate Dart models from REST API JSON.
+- Generate null-safe models.
+- Generate nested models.
+- Generate `fromJson` and `toJson`.
+- Support primitive JSON types.
+- Support nested JSON objects.
+- Support API response lists.
+- Generate camelCase Dart properties.
+- Generate model files automatically.

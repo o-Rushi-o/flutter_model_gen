@@ -6,9 +6,8 @@ class NameUtils {
       return "Model";
     }
 
-    final segments = uri.pathSegments
-        .where((segment) => segment.isNotEmpty)
-        .toList();
+    final segments =
+        uri.pathSegments.where((segment) => segment.isNotEmpty).toList();
 
     if (segments.isEmpty) {
       return "Model";
@@ -105,8 +104,7 @@ class NameUtils {
       return value.substring(0, value.length - 2);
     }
 
-    if (lower.endsWith("s") &&
-        !lower.endsWith("ss")) {
+    if (lower.endsWith("s") && !lower.endsWith("ss")) {
       return value.substring(0, value.length - 1);
     }
 
@@ -114,18 +112,15 @@ class NameUtils {
   }
 
   static String _toPascalCase(String value) {
-    final parts = value
-        .split(RegExp(r'[_\-\s]+'))
-        .where((e) => e.isNotEmpty)
-        .toList();
+    final parts =
+        value.split(RegExp(r'[_\-\s]+')).where((e) => e.isNotEmpty).toList();
 
     if (parts.isEmpty) {
       return "Model";
     }
 
     return parts.map((part) {
-      return part[0].toUpperCase() +
-          part.substring(1);
+      return part[0].toUpperCase() + part.substring(1);
     }).join();
   }
 
@@ -133,8 +128,7 @@ class NameUtils {
     final result = value
         .replaceAllMapped(
           RegExp(r'([a-z0-9])([A-Z])'),
-          (match) =>
-              '${match.group(1)}_${match.group(2)}',
+          (match) => '${match.group(1)}_${match.group(2)}',
         )
         .replaceAll(
           RegExp(r'[\s\-]+'),

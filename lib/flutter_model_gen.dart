@@ -1,4 +1,4 @@
-library flutter_model_gen;
+// library flutter_model_gen;
 
 import 'generator/model_generator.dart';
 

@@ -42,15 +42,13 @@ class ModelGenerator {
 
     if (json is List) {
       root = schema.buildFromList(
-        className:
-            "$className"
+        className: "$className"
             "ApiResponse",
         jsonList: json,
       );
     } else if (json is Map<String, dynamic>) {
       root = schema.buildFromMap(
-        className:
-            "$className"
+        className: "$className"
             "ApiResponse",
         json: json,
       );
@@ -71,8 +69,7 @@ class ModelGenerator {
 
     await writer.write(
       directory: "lib/models",
-      fileName:
-          "$fileName"
+      fileName: "$fileName"
           "ApiResponse.dart",
       content: builder.buildFile(root),
     );

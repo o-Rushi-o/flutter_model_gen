@@ -17,13 +17,11 @@ class StringUtils {
 
       if (i == 0) {
         buffer.write(
-          word.substring(0, 1).toLowerCase() +
-              word.substring(1),
+          word.substring(0, 1).toLowerCase() + word.substring(1),
         );
       } else {
         buffer.write(
-          word.substring(0, 1).toUpperCase() +
-              word.substring(1).toLowerCase(),
+          word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase(),
         );
       }
     }
@@ -36,7 +34,6 @@ class StringUtils {
 
     if (camel.isEmpty) return '';
 
-    return camel.substring(0, 1).toUpperCase() +
-        camel.substring(1);
+    return camel.substring(0, 1).toUpperCase() + camel.substring(1);
   }
 }
